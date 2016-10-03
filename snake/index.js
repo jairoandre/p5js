@@ -1,16 +1,25 @@
 var scl = 10;
 
+
+function Food()  {
+	var cols = floor(width / scl);
+	var rows = floor(height / scl);
+	this.x = floor(random(cols));
+	this.y = floor(random(rows));
+}
+
+Food.prototype.show = function() {
+	fill(255,0,255);
+	rect(this.x, this.y, scl, scl);
+};
+
+
 function Snake() {
 	this.x = 0;
 	this.y = 0;
 	this.xspeed = 1;
 	this.yspeed = 0;
 	frameRate(10);
-}
-
-function Food(x, y)  {
-	this.x = x;
-	this.y = y;
 }
 
 Snake.prototype.update = function() {
@@ -52,13 +61,19 @@ function keyPressed() {
 	}
 }
 
+var foods = [];
+
 function setup() {
 	createCanvas(600, 600);
 	snake = new Snake();
+	foods.push(new Food());
 }
 
 function draw() {
 	background(51);
 	snake.update();
 	snake.show();
+	foods.forEach((f) => {
+		f.show();
+	});
 }
