@@ -33,7 +33,7 @@ function setup() {
 	createCanvas(500, 500);
 	stroke(255);
 	var begin = createVector(width / 2, height);
-	root = new Branch(begin, 50, 0);
+	root = new Branch(begin, 100, 0);
 }
 
 function draw() {
