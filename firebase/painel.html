@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        margin: auto 0;
+      }
+      .list {
+        position: relative;
+        width: 1200px;
+        height: 675px;
+      }
+      .header {
+        position: absolute;
+        top: 0;
+        width: 1200px;
+        height: 75px;
+      }
+      .header__title {
+        background: rgb(15, 27, 182);
+        text-align: center;
+        color: #fff;
+        height: 25px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .header__columns {
+        position: absolute;
+        top: 25px;
+        width: 1200px;
+        height: 50px;
+        font-size: 15px;
+        text-align: right;
+      }
+      .header__column {
+        position: absolute;
+        background: rgb(54, 41, 203);
+        line-height: 25px;
+        color: #fff;
+      }
+      .header__column--convenio {
+        line-height: 50px;
+        width: 300px;
+        font-size: 30px;
+        text-align: left;
+      }
+      .header__column--ge30 {
+        background: rgb(112, 41, 203);
+        left: 300px;
+        width: 350px;
+      }
+      .header__column--ge30Qtd {
+        top: 25px;
+        width: 100px;
+      }
+      .header__column--ge30DaysAvg {
+        left: 400px;
+        top: 25px;
+        width: 100px;
+      }
+      .header__column--ge30ValueAvg {
+        left: 500px;
+        top: 25px;
+        width: 150px;
+      }
+      .header__column--lt30 {
+        background: rgb(156, 41, 203);
+        left: 650px;
+        width: 350px;
+      }
+      .header__column--lt30Qtd {
+        top: 25px;
+        width: 100px;
+      }
+      .header__column--lt30DaysAvg {
+        left: 750px;
+        top: 25px;
+        width: 100px;
+      }
+      .header__column--lt30ValueAvg {
+        left: 850px;
+        top: 25px;
+        width: 150px;
+      }
+      .header__column--pendentes {
+        background: rgb(203, 41, 123);
+        left: 1000px;
+        width: 200px;
+      }
+      .header__column--qtdPendentes {
+        top: 25px;
+        width: 100px;
+      }
+      .header__column--avgPendentes {
+        left: 1100px;
+        top: 25px;
+        width: 100px;
+      }
+      .lPadd {
+        padding-left: 5px;
+      }
+      .rPadd {
+        padding-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="header">
+        <div class="header__title">
+          INTERNAÇÃO
+        </div>
+        <div class="header__columns">
+          <div class="header__column header__column--convenio">
+            <div class="lPadd">
+              CONVÊNIO
+            </div>
+          </div>
+          <div class="header__column header__column--ge30">
+            <div class="rPadd">
+              CONTAS ABERTAS &gt;= 30 DIAS
+            </div>
+          </div>
+          <div class="header__column header__column--ge30 header__column--ge30Qtd">
+            <div class="rPadd">
+              QTD
+            </div>
+          </div>
+          <div class="header__column header__column--ge30 header__column--ge30DaysAvg">
+            <div class="rPadd">
+              MÉD. DIAS
+            </div>
+          </div>
+          <div class="header__column header__column--ge30 header__column--ge30ValueAvg">
+            <div class="rPadd">
+              MÉD. VALOR
+            </div>
+          </div>
+          <div class="header__column header__column--lt30">
+            <div class="rPadd">
+              CONTAS ABERTAS &lt; 30 DIAS
+            </div>
+          </div>
+          <div class="header__column header__column--lt30 header__column--lt30Qtd">
+            <div class="rPadd">
+              QTD
+            </div>
+          </div>
+          <div class="header__column header__column--lt30 header__column--lt30DaysAvg">
+            <div class="rPadd">
+              MÉD. DIAS
+            </div>
+          </div>
+          <div class="header__column header__column--lt30 header__column--lt30ValueAvg">
+            <div class="rPadd">
+              MÉD. VALOR
+            </div>
+          </div>
+          <div class="header__column header__column--pendentes">
+            <div class="rPadd">
+              GUIAS PENDENTES
+            </div>
+          </div>
+          <div class="header__column header__column--pendentes header__column--qtdPendentes">
+            <div class="rPadd">
+              QTD
+            </div>
+          </div>
+          <div class="header__column header__column--pendentes header__column--avgPendentes">
+            <div class="rPadd">
+              MÉD. DIAS
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
